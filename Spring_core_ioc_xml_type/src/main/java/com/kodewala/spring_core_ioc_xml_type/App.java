@@ -10,8 +10,12 @@ public class App {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(config);
 
 		Account account = (Account) applicationContext.getBean("acc");
+
+		Student student = (Student) applicationContext.getBean("std");
+
+		System.out.println(account.getAccountNumber() + " " + account.getHolderName() + " " + account.getAccountType());
 		
-		System.out.println(account.getAccountNumber()+" "+account.getHolderName()+" "+account.getAccountType());
+		System.out.println(student.getName()+" "+ student.getId());
 
 	}
 }

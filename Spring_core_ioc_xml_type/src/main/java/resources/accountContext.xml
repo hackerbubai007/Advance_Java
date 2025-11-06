@@ -13,5 +13,12 @@
     
     </bean>
     
+     <bean id="std" class="com.kodewala.spring_core_ioc_xml_type.Student">
+    <property name="name" value="Dipankar Mandal"></property>
+    <property name="id" value="007"></property>
+   
+    
+    </bean>
+    
 
 </beans>
